@@ -66,4 +66,32 @@ Fast-forward
  2 files changed, 41 insertions(+), 1 deletion(-)
  create mode 100644 .github/workflows/python-app.yml
 
+C:\Users\Arundathi\git2>git commit -m "cmd"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        cmd.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\Arundathi\git2>git add cmd.txt
+
+C:\Users\Arundathi\git2>git commit -m "cmd uploaded"
+[main 06be8cc] cmd uploaded
+ 1 file changed, 69 insertions(+)
+ create mode 100644 cmd.txt
+
+C:\Users\Arundathi\git2>git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 22 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.24 KiB | 424.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:karunaarundhati/git.git
+   f945edc..06be8cc  main -> main
+branch 'main' set up to track 'origin/main'.
+
 C:\Users\Arundathi\git2>
