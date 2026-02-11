@@ -1,0 +1,69 @@
+C:\Users\Arundathi>mkdir git2
+A subdirectory or file git2 already exists.
+
+C:\Users\Arundathi>cd git2
+
+C:\Users\Arundathi\git2>git init
+Initialized empty Git repository in C:/Users/Arundathi/git2/.git/
+
+C:\Users\Arundathi\git2>git add example.py
+
+C:\Users\Arundathi\git2>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   example.py
+
+
+C:\Users\Arundathi\git2>git commit -m "first version"
+[master (root-commit) bc4573e] first version
+ 1 file changed, 3 insertions(+)
+ create mode 100644 example.py
+
+C:\Users\Arundathi\git2>git config user.email "karuna.arundhati@gmail.com"
+
+C:\Users\Arundathi\git2>git config user.name "karunaarundhati"
+
+C:\Users\Arundathi\git2>git branch -M main
+
+C:\Users\Arundathi\git2>git remote add origin git@github.com:karunaarundhati/git.git
+
+C:\Users\Arundathi\git2>git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 238 bytes | 119.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:karunaarundhati/git.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+C:\Users\Arundathi\git2>git push -u origin main
+To github.com:karunaarundhati/git.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'github.com:karunaarundhati/git.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\Users\Arundathi\git2>git pull origin main
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 8 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (8/8), 2.53 KiB | 70.00 KiB/s, done.
+From github.com:karunaarundhati/git
+ * branch            main       -> FETCH_HEAD
+   bc4573e..f945edc  main       -> origin/main
+Updating bc4573e..f945edc
+Fast-forward
+ .github/workflows/python-app.yml | 39 +++++++++++++++++++++++++++++++++++++++
+ example.py                       |  3 ++-
+ 2 files changed, 41 insertions(+), 1 deletion(-)
+ create mode 100644 .github/workflows/python-app.yml
+
+C:\Users\Arundathi\git2>
